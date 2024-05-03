@@ -1,0 +1,80 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 92%; 
+  max-width: 400px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%; 
+}
+
+.input-row label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.input-row input,
+.input-row select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 85%; 
+  background-color: white;
+}
+
+#cardNumber ,#vendor {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+}
+.input-row input:last-child,
+.input-row select:last-child {
+  margin-right: 0;
+}
+
+#form_btn {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+/* Adjust input width for smaller screens */
+@media screen and (max-width: 480px) {
+  .input-row input,
+  .input-row select {
+    width: 78%; 
+  }
+}
+
+/* iPad screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .input-row input,
+  .input-row select {
+    width: 78%; 
+  }
+  .container {
+    margin-left: 13rem;
+    justify-content: center;
+  }
+}

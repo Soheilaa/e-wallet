@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: -20px; /* Adjust this value based on your design */
+  background-color: white; /* Ensure the background is white to prevent overlapping text */
+  position: relative;
+}
+
+.card:not(:first-child) {
+  position: absolute;
+  top: 0; /* Adjust this value for the stacking overlap */
+  z-index: -1;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.credit-card {
+  border-radius: 15px;
+  perspective: 1000px;
+  width: 350px;
+  height: 220px;
+  margin: 20px;
+}
+
+.card-front {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-type {
+  font-size: 22px;
+  margin: 4px 24px;
+}
+
+.card-chip {
+  width: 48px;
+  height: 59px;
+  margin: 8px;
+}
+
+.card-number {
+  font-size: 20px;
+  margin: 21px;
+  margin-top: 6rem;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.card-holder, .card-expiry {
+  font-size: 13px;
+}
+
+.card-strip {
+  width: 100%;
+  height: 40px;
+}
+
+.card-cvv {
+  font-size: 20px;
+  padding: 20px;
+}
+
+button {
+  background-color: #f9f9f9;
+  width: 94%;
+  margin: 7px;
+}
